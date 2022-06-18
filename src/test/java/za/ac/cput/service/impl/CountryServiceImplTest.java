@@ -47,7 +47,7 @@ class CountryServiceImplTest {
         countryService.delete(country);
         List<Country> co = countryService.findAll();
         assertEquals(0, co.size());
-        assertNull(co);
+        assertNotNull(co);
     }
 
     @Test
